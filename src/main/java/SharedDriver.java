@@ -11,6 +11,7 @@ public class SharedDriver {
         {
             WebDriverManager.chromedriver().setup();
             webDriver = new ChromeDriver();
+            webDriver.manage().window().maximize();
         }
         return webDriver;
     }
